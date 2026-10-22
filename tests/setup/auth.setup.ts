@@ -1,6 +1,6 @@
 import { test as setup } from '@playwright/test';
-import { LoginPage } from '../pages/auth/login.page';
-import { currentUsers } from '../data/users';
+import { LoginPage } from '../../src/pages/auth/login.page';
+import { currentUsers } from '../../src/data/users';
 
 setup('authenticate as admin', async ({ page }) => {
   const loginPage = new LoginPage(page);
